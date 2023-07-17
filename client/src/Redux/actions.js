@@ -26,7 +26,7 @@ export const fetchAllCountries = (page) => {
   return (dispatch) => {
     dispatch(fetchAllCountriesRequest());
     axios
-      .get(`http://localhost:3001/countries/${page}`)
+      .get(`/countries/${page}`)
       .then((response) => {
         dispatch(fetchAllCountriesSuccess(response.data));
       })
@@ -63,7 +63,7 @@ export const searchCountries = (searchTerm) => {
     dispatch(searchCountriesRequest());
 
     axios
-      .get(`http://localhost:3001/countries/search/name?name=${searchTerm}`)
+      .get(`/countries/search/name?name=${searchTerm}`)
       .then((response) => {
         dispatch(searchCountriesSuccess(response.data));
       })
@@ -104,7 +104,7 @@ export const fetchCountryById = (id) => {
   return (dispatch) => {
     dispatch(fetchCountryByIdRequest());
 
-    axios.get(`http://localhost:3001/countries/id/${id}`)
+    axios.get(`/countries/id/${id}`)
       .then((response) => {
         dispatch(fetchCountryByIdSuccess(response.data));
       })
@@ -147,7 +147,7 @@ export const createActivity = (formData) => {
   return async (dispatch) => {
     try {
       // Realiza la solicitud POST al backend para crear la actividad
-      const response = await axios.post('http://localhost:3001/activities', formData);
+      const response = await axios.post('/activities', formData);
       const newActivity = response.data;
       
       dispatch(createActivitySuccess(newActivity));
@@ -192,8 +192,8 @@ const fetchActivitiesFailure = () => {
 export const fetchActivities = () => {
   return async (dispatch) => {
     try {
-      const response = await fetch('http://localhost:3001/activities');
-      const data = await response.json();
+      const response = await axios.get('/activities');
+      const data = response.data;
       dispatch(fetchActivitiesSuccess(data));
     } catch (error) {
       console.error('Error fetching activities:', error);
