@@ -81,7 +81,7 @@
   box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 }
 
-/* Estilos para los inputs */
+
 .name {
   width: 300px;
   padding: 10px;
@@ -100,7 +100,7 @@
   font-size: 16px;
 }
 
-/* Media Queries */
+
 @media screen and (max-width: 1500px) {
   .container {
     padding: 20px;
