@@ -1,0 +1,30 @@
+# Dependencias y archivos de construcción del frontend
+client/node_modules/
+client/dist/
+client/build/
+
+# Archivos de configuración del frontend
+client/.env
+
+# Archivos de caché y compilación del frontend
+client/.cache/
+client/.eslintcache/
+
+# Archivos de prueba del frontend
+client/coverage/
+
+# Otros archivos generados del frontend
+client/*.log
+client/*.swp
+
+# Dependencias y archivos de construcción del backend
+server/node_modules/
+
+# Archivos de configuración del backend
+server/.env
+
+# Archivos generados por Nodemon del backend
+server/*.log
+
+# Otros archivos generados del backend
+server/*.swp

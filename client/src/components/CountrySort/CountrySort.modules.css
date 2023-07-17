@@ -1,0 +1,65 @@
+.divbutons {
+  background-color: #ffffff09;
+  color: #000000;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: background-color 0.4s ease;
+}
+
+.divbutons:hover {
+  background-color: #00000030;
+}
+
+.topButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  flex-grow: 1;
+}
+
+.topButtons button {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  flex-grow: 1;
+}
+
+.butons {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.butons:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 444px) {
+  .topButtons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .topButtons button {
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+}

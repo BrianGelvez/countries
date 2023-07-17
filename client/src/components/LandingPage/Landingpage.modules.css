@@ -1,0 +1,194 @@
+.container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 180px;
+}
+
+.div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.div2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000a4;
+  padding: 40px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.title {
+  font-size: 100px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.nombre {
+  font-size: 50px;
+  margin: 0;
+}
+
+.access {
+  margin-top: 70px;
+}
+
+.btn-third {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 0.6em;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 30px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 0 10px 0 #8b8b8b inset, 0 0 10px 4px #313131;
+}
+
+.btn-third:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+}
+
+/* Estilos para los inputs */
+.name {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.password {
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1500px) {
+  .container {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 80px;
+    margin-top: 60px;
+  }
+
+  .nombre {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+
+  .access {
+    margin-top: 20px;
+  }
+
+  .div2 {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+
+  .nombre {
+    font-size: 30px;
+  }
+
+  .access {
+    margin-top: 10px;
+  }
+
+  .btn-third {
+    font-size: 0.8rem;
+    padding: 1em 2em;
+  }
+
+  .name,
+  .password {
+    width: 250px;
+  }
+
+  .div2 {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+
+  .nombre {
+    font-size: 20px;
+  }
+
+  .access {
+    margin-top: 5px;
+  }
+
+  .btn-third {
+    font-size: 0.7rem;
+    padding: 0.8em 1.8em;
+  }
+
+  .name,
+  .password {
+    width: 200px;
+  }
+
+  .div2 {
+    padding: 10px;
+  }
+}

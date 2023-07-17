@@ -1,0 +1,78 @@
+.card2 {
+  background-color: #0000003d;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-right: 15px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.card2:hover {
+  background-color: #0000007b;
+}
+
+.card {
+  background-color: #241125;
+  width: 270px;
+  color: wheat;
+  height: 350px;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  text-shadow: 4px 0px 3px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.card:hover {
+  background-color: #2a1e2e;
+}
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .card a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .card a:hover {
+    text-decoration: underline;
+  }
+  
+  .card a:visited {
+    color: inherit;
+  }
+
+
+  @media (max-width: 1500px) {
+    .card {
+      width: 200px;
+      height: 280px;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .card {
+      width: 160px;
+      height: 270px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .card {
+      width: 150px;
+      height: 270px;
+    }
+  }
