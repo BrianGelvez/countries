@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './LandingPage.modules.css';
+import './Landingpage.modules.css';
 
 const LandingPage = () => {
   const [credentials, setCredentials] = useState({
