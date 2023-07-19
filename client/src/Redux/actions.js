@@ -237,3 +237,58 @@ export const sortCountriesByPopulationDescending = () => {
 };
 
 //-----------------------------------------------------------------------------------------------------------
+
+export const updateActivitySuccess = (updatedActivity) => {
+  return {
+    type: 'UPDATE_ACTIVITY_SUCCESS',
+    payload: updatedActivity,
+  };
+};
+
+export const updateActivityFailure = (errorMessage) => {
+  return {
+    type: 'UPDATE_ACTIVITY_FAILURE',
+    payload: errorMessage,
+  };
+};
+
+export const updateActivity = (id, updatedActivity) => {
+  return async (dispatch) => {
+    try {
+      const response = await axios.put(`/activities/${id}`, updatedActivity);
+      const updatedActivityData = response.data;
+      dispatch(updateActivitySuccess(updatedActivityData));
+    } catch (error) {
+      dispatch(updateActivityFailure(error.message));
+    }
+  };
+};
+
+
+//-----------------------------------------------------------------------------------------------------------
+
+
+export const deleteActivitySuccess = (id) => {
+  return {
+    type: 'DELETE_ACTIVITY_SUCCESS',
+    payload: id,
+  };
+};
+
+export const deleteActivityFailure = () => {
+  return {
+    type: 'DELETE_ACTIVITY_FAILURE',
+  };
+};
+
+export const deleteActivity = (id) => {
+  return async (dispatch) => {
+    try {
+      await axios.delete(`/activities/${id}`);
+      dispatch(deleteActivitySuccess(id));
+    } catch (error) {
+      console.error('Error deleting activity:', error);
+      dispatch(deleteActivityFailure());
+    }
+  };
+};

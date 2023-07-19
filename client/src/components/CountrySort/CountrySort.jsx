@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import {
+  fetchAllCountries,
   sortCountriesAscending,
   sortCountriesDescending,
   sortCountriesByPopulationAscending,
@@ -7,8 +8,13 @@ import {
 } from "../../Redux/actions";
 import "./CountrySort.modules.css";
 
+
 const CountrySort = () => {
   const dispatch = useDispatch();
+
+  const handleReset = () => {
+    dispatch(fetchAllCountries());
+  };
 
   const handleAlphabeticalSort = () => {
     dispatch(sortCountriesAscending());
@@ -42,6 +48,9 @@ const CountrySort = () => {
       <button className="butons" onClick={handleReversePopulationSort}>
         Population (Descending)
       </button>
+      <button className="reset" onClick={handleReset}>
+          Reset
+        </button>
     </div>
   );
   

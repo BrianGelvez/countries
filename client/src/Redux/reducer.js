@@ -150,6 +150,52 @@ const reducer = (state = initialState, action) => {
         ...state,
         countries: [...state.countries].sort((a, b) => b.population - a.population),
       };
+
+      case 'UPDATE_ACTIVITY_SUCCESS': {
+        // Encuentra la actividad actualizada en el arreglo de actividades y actualiza su contenido
+        const updatedActivityIndex = state.activities.findIndex(activity => activity.id === action.payload.id);
+        if (updatedActivityIndex !== -1) {
+          const updatedActivities = [...state.activities];
+          updatedActivities[updatedActivityIndex] = action.payload;
+          return {
+            ...state,
+            activities: updatedActivities,
+            loading: false,
+            error: null,
+          };
+        }
+        return {
+          ...state,
+          loading: false,
+          error: 'Failed to update activity',
+        };
+      }
+  
+      case 'UPDATE_ACTIVITY_FAILURE':
+        // Puedes manejar errores relacionados con la actualización aquí
+        return {
+          ...state,
+          loading: false,
+          error: action.payload,
+        };
+        case 'DELETE_ACTIVITY_SUCCESS': {
+          // Filtramos las actividades para eliminar la actividad con el ID proporcionado
+          const updatedActivities = state.activities.filter(
+            (activity) => activity.id !== action.payload
+          );
+        
+          return {
+            ...state,
+            activities: updatedActivities,
+            selectedActivity: null,
+          };
+        }
+        
+        case 'DELETE_ACTIVITY_FAILURE':
+          return {
+            ...state,
+            error: 'Error deleting activity.',
+          };
     default:
       return state;
   }

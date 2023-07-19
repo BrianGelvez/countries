@@ -5,6 +5,7 @@ import HomePage from './components/HomePage/HomePage';
 import Detail from './components/Detail/Detail';
 import FormPage from './components/FormPage/FormPage';
 import axios from "axios";
+import EditActivityForm from "./components/EditActivityForm/EditActivityForm";
 
 axios.defaults.baseURL = 'http://localhost:3001';
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/home/:page" element={<HomePage />} />
         <Route path="/home/id/:id" element={<Detail />} />
         <Route path="/form" element={<FormPage />} />
+        <Route exact path="/edit-activity/:id" element={<EditActivityForm/>} />
       </Routes>
     </Router>
   );

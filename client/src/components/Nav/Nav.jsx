@@ -4,37 +4,27 @@ import CountrySort from "../CountrySort/CountrySort";
 import SearchBar from "../SearchBar/SearchBar";
 import "./Nav.modules.css";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { fetchAllCountries } from "../../Redux/actions";
+import UpdateActivityButton from "../UpdateActivityButton/UpdateActivityButton";
+import ActivitySelector from "../ActivitySelector/ActivitySelector";
 
 export const Nav = () => {
-  const dispatch = useDispatch();
-
-  const handleReset = () => {
-    dispatch(fetchAllCountries());
-  };
-
   return (
     <div className="Nav">
       <div className="NavContainer">
         <div className="countrySort">
           <CountrySort />
         </div>
-
         <div className="filtros">
-        <ContinentFilter />
-        <ActivityFilter />
+          <ContinentFilter />
+          <ActivityFilter />
         </div>
-
-
         <Link to="/form">
           <button className="CreateActivity">create activity</button>
         </Link>
-
-        <button className="reset" onClick={handleReset}>
-          Reset
-        </button>
-
+        <div className="filtros">
+          <UpdateActivityButton />
+        </div>
+        <ActivitySelector />
       </div>
       <div className="busqueda">
         <SearchBar />

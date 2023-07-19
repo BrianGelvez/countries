@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchAllCountries, setSelectedContinent, setSelectedActivity, fetchActivities } from '../../Redux/actions';
+import { fetchAllCountries, setSelectedContinent, setSelectedActivity } from '../../Redux/actions';
 import { Nav } from '../Nav/Nav';
 import { useEffect } from 'react';
 import Cards from '../Cards/Cards';
@@ -24,9 +24,9 @@ const HomePage = () => {
   const endIndex = startIndex + itemsPerPage;
 
   useEffect(() => {
+    // Cargar los países cuando el componente se monte y cada vez que la URL cambie
     dispatch(fetchAllCountries());
-    dispatch(fetchActivities());
-  }, [dispatch]);
+  }, [dispatch, page]); 
 
   const filteredCountries = countries.filter((country) => {
     if (selectedContinent && selectedActivity) {

@@ -1,0 +1,32 @@
+/* UpdateActivityButton.module.css */
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .select {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 2px solid #2E2E2E;
+    font-size: 16px;
+    width: 200px;
+    text-align: center;
+    margin-top: 8px;
+  }
+  
+  .custom-button {
+    background-color: rgba(240, 204, 3, 0.411);
+    color: white;
+    padding: 5px 55px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+  }
+  
+  .custom-button:hover {
+    background-color: rgba(240, 204, 3, 0.74);
+  }
