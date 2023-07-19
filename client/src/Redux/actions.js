@@ -58,12 +58,12 @@ export const searchCountriesFailure = (error) => {
   };
 };
 
-export const searchCountries = (searchTerm) => {
+export const searchCountries = (name) => {
   return (dispatch) => {
     dispatch(searchCountriesRequest());
 
     axios
-      .get(`/countries/search/name?name=${searchTerm}`)
+      .get(`/countries/search/name?name=${name}`)
       .then((response) => {
         dispatch(searchCountriesSuccess(response.data));
       })

@@ -8,7 +8,6 @@ const initialState = {
   },
   countries: [],
   activities: [],
-  filteredCountries: [],
   createdActivity: null,
   selectedCountry: null,
   selectedContinent: null,
