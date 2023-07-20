@@ -24,8 +24,7 @@ const HomePage = () => {
   const endIndex = startIndex + itemsPerPage;
 
   useEffect(() => {
-    // Cargar los países cuando el componente se monte y cada vez que la URL cambie
-    dispatch(fetchAllCountries());
+    dispatch(fetchAllCountries(page));
   }, [dispatch, page]); 
 
   const filteredCountries = countries.filter((country) => {

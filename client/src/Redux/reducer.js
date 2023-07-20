@@ -88,7 +88,6 @@ const reducer = (state = initialState, action) => {
         error: action.payload,
       };
     case 'SET_FORM_DATA':
-      console.log(action.payload);
       return {
         ...state,
         formData: action.payload,

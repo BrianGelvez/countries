@@ -24,7 +24,7 @@ const Pagination = ({ pageNumber, totalPages, navigate }) => {
   };
 
   const renderPageButtons = () => {
-    const buttons = [];
+    const buttons = []
 
     for (let i = firstPage; i <= lastPage; i++) {
       buttons.push(

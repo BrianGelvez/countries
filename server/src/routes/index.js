@@ -5,7 +5,7 @@ const getCountriesByName = require("../controllers/getCountriesByName");
 const createActivity = require("../controllers/createActivity");
 const getActivities  = require("../controllers/getActivities");
 const updateActivity = require("../controllers/updateActivity")
-const deleteActivity = require("../controllers/deleteActivity")
+const deleteActivity = require("../controllers/deleteActivity");
 
 const router = Router();
 
