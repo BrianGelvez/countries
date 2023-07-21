@@ -27,6 +27,8 @@ La idea de este proyecto es construir una aplicación web a partir de la API [**
 - Filtrarlos.
 - Ordenarlos.
 - Crear actividades turísticas.
+- Actualizar actividades turísticas.
+- Borrar actividades turísticas.
 
 ⚠️ Para las funcionalidades de filtrado y ordenamiento NO se puede utilizar los endpoints de la API externa que ya devuelven los resultados filtrados u ordenados.
 
