@@ -117,7 +117,7 @@ const FormPage = () => {
             {notification.message}
           </div>
         )}
-        <form className="form" onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit} >
           <div className="form-group">
             <label className="form-label" htmlFor="name">
               Name Activity:

@@ -1,4 +1,4 @@
-## COUNTRIES
+# COUNTRIES APP - CRUD Completo
 
 ## ** OBJETIVOS**
 
@@ -30,6 +30,14 @@ La idea de este proyecto es construir una aplicación web a partir de la API [**
 
 ⚠️ Para las funcionalidades de filtrado y ordenamiento NO se puede utilizar los endpoints de la API externa que ya devuelven los resultados filtrados u ordenados.
 
+## Funcionalidades CRUD
+
+La aplicación cuenta con las siguientes funcionalidades CRUD:
+
+1. Crear actividades turísticas: Los usuarios pueden crear nuevas actividades turísticas asociadas a un país específico, ingresando el nombre de la actividad, su dificultad, duración y temporada recomendada.
+2. Actualizar actividades turísticas: Los usuarios pueden modificar la información de las actividades turísticas existentes.
+3. Eliminar actividades turísticas: Los usuarios pueden eliminar actividades turísticas que ya no deseen.
+
 ### **Único end-point que se puede utilizar**
 
 - [**http://localhost:5000/countries**]
@@ -39,6 +47,12 @@ La idea de este proyecto es construir una aplicación web a partir de la API [**
 <img src="./client/src/assets/foto1.png" />
 
 <br />
+
+<div align="center">
+  <img src="./client/src/assets/foto6.png" />
+</div>
+
+<br/>
 
 <img src="./client/src/assets/foto2.png" />
 
@@ -54,12 +68,5 @@ La idea de este proyecto es construir una aplicación web a partir de la API [**
 
 <img src="./client/src/assets/foto5.png" />
 
-<br />
 
-<img src="./client/src/assets/foto6.png" />
-
-<br />
-
-<div align="center">
-  <img src="./client/src/assets/responsive1.png" alt="Responsive Image" />
-</div>
+<br/>
