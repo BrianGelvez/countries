@@ -44,6 +44,10 @@ La aplicación cuenta con las siguientes funcionalidades CRUD:
 
 - [**http://localhost:5000/countries**]
 
+**levantar Back End: npm start**
+**levantar Front End: npm run dev**
+
+
 <br />
 
 <img src="./client/src/assets/foto1.png" />
