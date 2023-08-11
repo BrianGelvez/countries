@@ -7,7 +7,7 @@ import FormPage from './components/FormPage/FormPage';
 import axios from "axios";
 import EditActivityForm from "./components/EditActivityForm/EditActivityForm";
 
-axios.defaults.baseURL = 'http://localhost:3001';
+axios.defaults.baseURL = 'https://countries-blush.vercel.app/';
 
 
 

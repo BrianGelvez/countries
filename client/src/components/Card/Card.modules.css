@@ -17,9 +17,9 @@
 
 .card {
   background-color: #241125;
-  width: 270px;
+  width: 290px;
   color: wheat;
-  height: 350px;
+  height: 400px;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -56,23 +56,9 @@
   }
 
 
-  @media (max-width: 1500px) {
-    .card {
-      width: 200px;
-      height: 280px;
-    }
-  }
-
   @media (max-width: 1000px) {
     .card {
-      width: 160px;
-      height: 270px;
-    }
-  }
-
-  @media (max-width: 700px) {
-    .card {
-      width: 150px;
-      height: 270px;
+      width: 200px;
+      height: 250px;
     }
   }
